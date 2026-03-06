@@ -1,0 +1,47 @@
+@media only screen and (min-width: 38rem) {
+    /* Header */
+    .hamburger{
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px black;
+    }
+
+    .navigation ul {
+        display: flex;
+
+    }
+
+    .navigation a {
+        border: none;
+    }
+    /* Main */
+
+    .about {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .about h1 {
+        grid-column: 1 / span 2;
+        margin-bottom: 1px;
+    }
+
+    /* Courses */
+
+    .res-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
