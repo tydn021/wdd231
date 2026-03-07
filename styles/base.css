@@ -186,6 +186,7 @@ footer {
     content: " ✓ ";
 }
 
-#credit-total {
-    margin-bottom: 10px;
+.total{
+    display: block;
+    padding: 15px;
 }
