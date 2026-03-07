@@ -185,3 +185,7 @@ footer {
 .completed h3::before {
     content: " ✓ ";
 }
+
+#credit-total {
+    margin-bottom: 10px;
+}
