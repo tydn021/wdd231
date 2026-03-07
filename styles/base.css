@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #ED7D31;
-    --secondary-color: #FFF7E9;
+    --primary-color: #000000;
+    --secondary-color: #5682B1;
     --accent1-color: #5F9DF7;
-    --accent2-color: #1746A2;
-    --bkcolor: #180b5b;
+    --accent2-color: #739EC9;
+    --bkcolor: #FFE8DB;
     --bkcolor-transparent: rgba(32, 12, 128, 0.424);
-    --heading-font: "Merriweather", sans-serif;
-    --body-font: "Roboto", sans-serif;
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Montserrat", sans-serif;
 }
 
 *,
@@ -14,7 +14,13 @@
 *::before {
     box-sizing: border-box;
 }
+body {
+    font-family: var(--heading-font);
+}
 
+body p {
+    font-family: var(--body-font);
+}
 /* Header */
 header {
     display: grid;
@@ -46,7 +52,7 @@ h1 {
 .hamburger {
     background: none;
     border: none;
-    color: ;
+    color: var(--primary-color);
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -81,7 +87,7 @@ h1 {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    color: ;
+    color: var(--primary-color);
     text-decoration: none;
     border-bottom: solid 1px #ddd;
 }
@@ -91,7 +97,8 @@ h1 {
 }
 
 .navigation a:hover {
-    background-color: #5F9DF7;
+    background-color: var(--bkcolor);
+    color: var(--accent2-color);
 }
 
 /* Main */
@@ -104,10 +111,11 @@ section {
 }
 
 section h2 {
-    background-color: #180b5b;
+    background-color: var(--secondary-color);
     border-radius: 12px 12px 0 0;
     margin: 0;
     padding: 6px;
+    color: var(--primary-color);
 }
 
 section img {
@@ -135,7 +143,7 @@ section button {
 /* FOOTER */
 
 footer {
-    background-color: #eee;
+    background-color: var(--accent2-color);
     padding: 1rem 10px;
     text-align: center;
 }
@@ -171,7 +179,7 @@ footer {
 /* Course Filter */
 
 .completed {
-    background-color: #ED7D31;
+    background-color: var(--accent1-color);
 }
 
 .completed h3::before {
