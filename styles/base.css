@@ -140,12 +140,18 @@ section button {
     margin: 10px;
 }
 
+section p {
+    margin: 20px;
+    padding: 20px;
+}
+
 /* FOOTER */
 
 footer {
     background-color: var(--accent2-color);
     padding: 1rem 10px;
     text-align: center;
+    color: var(--primary-color);
 }
 
 .social {
