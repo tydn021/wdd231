@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #FFF8F0;
+    --secondary-color: #4B2E2B;
+    --accent1-color: #5F9DF7;
+    --accent2-color: #739EC9;
+    --bkcolor: #FFE8DB;
+    --bkcolor-transparent: rgba(32, 12, 128, 0.424);
+    --heading-font: "Dancing Script", serif;
+    --body-font: "Open Sans", sans-serif;
+}
+
+body {
+    font-family: var(--heading-font);
+
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	margin: 1rem 0;
+	text-shadow: 0 0 30px #111;
+}
+
+section {
+	margin: 0.5rem;
+	padding: 0.5rem;
+	background-color: var(--primary-color);
+	border: 1px solid var(--secondary-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    border-radius: 15px;
+}
+
+section > p {
+	min-height: 10px;
+	font-size: smaller;
+	text-align: center;
+    font-family: var(--body-font);
+    background-color: ;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+img {
+	width: auto;
+	max-width: 325px;
+	box-shadow: 0 0 30px #777;
+	height: 200px;
+	border: 1px solid #111;
+}
+
