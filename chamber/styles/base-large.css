@@ -1,0 +1,43 @@
+@media only screen and (min-width: 38rem) {
+
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+    }
+   /* header {
+        grid-template-columns: 24px auto;
+    } */
+
+    /* Hamburger */
+    .hamburger {
+        display: none;
+    }
+    main,
+    nav,
+    footer {
+        
+        margin: 0 auto;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px black;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .navigation a {
+        border: none;
+    }
+}
