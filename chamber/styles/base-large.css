@@ -1,20 +1,28 @@
 @media only screen and (min-width: 38rem) {
 
     /* Header */
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-    }
-
-    .right {
-        display: flex;
-        align-items: center;
-    }
+    
    /* header {
         grid-template-columns: 24px auto;
     } */
+
+    /* Footer */
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    footer section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer img{
+        width: auto;
+        height:  50px;
+    }
 
     /* Hamburger */
     .hamburger {
