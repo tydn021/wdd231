@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The Chamber of Commerce Directory page I am making for WDD 231.">
     <meta name="author" content="Tyler Nelson">
+     <meta property="og:title" content="WDD 231 - Directory Page - Tyler Nelson" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tydn021.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:image" content="https://media.istockphoto.com/id/1125710637/photo/downtown-spokane-washington-skyline-and-the-spokane-river.jpg?s=1024x1024&w=is&k=20&c=jQfbLJCQBv1irlSVUUmhBobvOh-uC8Vp5iQeYjF0TZA=" />
     <title>WDD 231 - Directory Page - Tyler Nelson</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -13,7 +17,12 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/members.js" defer></script>
-    <title>Directory</title>
+    <link rel="icon" href="images/sunshine.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -38,9 +47,10 @@
     </header>
 
     <main>
+        <h1>Our Members!</h1>
         <div class="buttons">
-        <button id="grid">▦</button>
-        <button id="table">☷</button>
+            <button id="grid">▦</button>
+            <button id="table">☷</button>
         </div>
         <div id="cards"></div>
     </main>
@@ -48,11 +58,11 @@
     <footer>
         <section>
             <article>
-                <h4>Spokane Valley Chamber of Commerce</h3>
-                    <p>9842 N. Unknown Ave</p>
-                    <p>Spokane, WA 99208</p>
-                    <p>info@spokanevalleycoc.org</p>
-                    <p>(509) 555-0100</p>
+                <h3>Spokane Valley Chamber of Commerce</h3>
+                <p>9842 N. Unknown Ave</p>
+                <p>Spokane, WA 99208</p>
+                <p>info@spokanevalleycoc.org</p>
+                <p>(509) 555-0100</p>
             </article>
         </section>
 
@@ -64,6 +74,7 @@
 
         <section>
             <article>
+                <h3 class="hidden">None</h3>
                 <p>WDD231 Class Project</p>
                 <p>Tyler Nelson</p>
                 <p> &copy;<span id="currentyear"></span> Spokane Valley Chamber of Commerce</p>

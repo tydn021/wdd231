@@ -8,8 +8,8 @@
     --bkcolor: #AC7D88;
     --bkcolor2:#FAF3E0;
     --bkcolor-transparent: rgba(111, 178, 210, .7);
-    --heading-font: "Playfair Display", serif;
-    --body-font: "Montserrat", sans-serif;
+    --heading-font: "Raleway", serif;
+    --body-font: "Open Sans", sans-serif;
 }
 
 *,
@@ -47,7 +47,16 @@ footer {
     color: var(--accent4-color);
 }
 footer section {
+    justify-content: center;
     text-align: center;
+}
+
+footer p {
+    font-family: var(--body-font);
+}
+
+.hidden {
+    display: none;
 }
 
 .logo {
@@ -117,6 +126,13 @@ main {
     padding-top: 0;
 }
 
+main h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
 /* Buttons */
 
 button {
@@ -140,6 +156,7 @@ button {
     gap: 1.5rem;
     max-width: 1100px;
     margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 #cards section {
@@ -150,6 +167,7 @@ button {
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
+    font-family: var(--body-font);
 }
 
 #cards img {
@@ -177,9 +195,12 @@ button {
     border-collapse: collapse;
     font-size: 16px;
     padding: 10px;
+    background-color: var(--accent2-color);
+    color: #333333;
 }
 
 #cards table tr:nth-child(even) {
-    background-color: #5682B1;
+    background-color: var(--accent4-color);
+    color: var(--bkcolor2);
 
 }
