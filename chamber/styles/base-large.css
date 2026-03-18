@@ -1,8 +1,8 @@
 @media only screen and (min-width: 38rem) {
 
     /* Header */
-    
-   /* header {
+
+    /* header {
         grid-template-columns: 24px auto;
     } */
 
@@ -12,26 +12,27 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
+
     footer section {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    footer img{
+    footer img {
         width: auto;
-        height:  50px;
+        height: 50px;
     }
 
     /* Hamburger */
     .hamburger {
         display: none;
     }
+
     main,
     nav,
     footer {
-        
+
         margin: 0 auto;
     }
 
@@ -47,5 +48,12 @@
 
     .navigation a {
         border: none;
+    }
+
+    /* Cards */
+
+    #cards section {
+        margin-left: 0;
+        margin-right: 0;
     }
 }

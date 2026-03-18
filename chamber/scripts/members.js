@@ -14,25 +14,32 @@ const displayMemberGrid = (members) => {
     const cards = document.querySelector('#cards');
     members.forEach((member) => {
         let card = document.createElement("section");
+        let companyName = document.createElement("h3");
         let logo = document.createElement("img");
         let address = document.createElement('p');
         let phone = document.createElement('p');
         let url = document.createElement('p');
+        let memberLevel = document.createElement('span');
 
         
         logo.setAttribute('src', member.imgurl);
         logo.setAttribute('alt', `logo of ${member.companyname}`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('height', '440');
+        companyName.textContent = `${member.companyname}`;
         address.textContent = `${member.companyaddress}`;
         phone.textContent = `${member.phonenum}`;
         url.textContent = `${member.url}`;
+        memberLevel.classList.add(member.memberlevel === 3 ? 'gold' : member.memberlevel === 2 ? 'silver' :'standard');
+        memberLevel.textContent = `${member.memberlevel === 3 ? 'Gold' : member.memberlevel === 2 ? 'Silver' :'Basic'}`;
         
 
         card.appendChild(logo);
+        card.appendChild(companyName);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(url);
+        card.appendChild(memberLevel);
         
 
         cards.appendChild(card);
