@@ -111,7 +111,7 @@ footer p {
 }
 
 .navigation li.current {
-    background-color: #eee;
+    background-color: var(--secondary-color);
 }
 
 .navigation a:hover {
