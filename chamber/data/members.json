@@ -5,7 +5,7 @@
             "companyaddress": "14208 E 4th Ave, Spokane Valley, WA 99216",
             "phonenum": "(509)-926-9397",
             "url": "https://spokaneplantfarm.com/",
-            "imgurl": "https://spokaneplantfarm.com/cdn/shop/files/TPF200x80_831x333.png?v=1741259904",
+            "imgurl": "images/plant-farm.webp",
             "memberlevel": 2
         },
         {
@@ -13,7 +13,7 @@
             "companyaddress": "11518 E Sprague Ave, Spokane Valley, WA 99206",
             "phonenum": "(509)-474-0274",
             "url": "https://www.valleytrains.com/",
-            "imgurl": "https://www.valleytrains.com/images/logo1.svg",
+            "imgurl": "images/valley-trains.webp",
             "memberlevel": 1
         },
           {
@@ -21,7 +21,7 @@
             "companyaddress": "16002 E Broadway Ave, Spokane Valley, WA 99037",
             "phonenum": "(509)-928-6037",
             "url": "https://www.quiltingbeespokane.com/?v=0b3b97fa6688",
-            "imgurl": "https://www.quiltingbeespokane.com/wp-content/uploads/2022/02/Bee-Hive-Logo-1536x1084.png.webp",
+            "imgurl": "images/quilting-bee.webp",
             "memberlevel": 3
         },
         {
@@ -29,7 +29,7 @@
             "companyaddress": "2422 E Sprague Ave, Spokane, WA 99202",
             "phonenum": "(509)-534-0694",
             "url": "https://nwseed.com/",
-            "imgurl": "https://storage.googleapis.com/msgsndr/eJqYCsog8BNt5QPQ9rbp/media/692fbe1a7f53118ff3fc1386.jpg",
+            "imgurl": "images/nw-seed.webp",
             "memberlevel": 3
         },
           {
@@ -37,7 +37,7 @@
             "companyaddress": "6903 E Bigelow Gulch Rd, Spokane, WA 99217",
             "phonenum": "(509)-466-6640",
             "url": "https://koigarden.com/",
-            "imgurl": "https://koigarden.com/wp-content/uploads/koi-gardens-pond-specialists.png",
+            "imgurl": "images/koi-gardens.webp",
             "memberlevel": 2
         },
         {
@@ -45,7 +45,7 @@
             "companyaddress": "9405 S Williams Ln, Spokane, WA 99224",
             "phonenum": "(509)-448-4968",
             "url": "https://rosariumgardencenter.com/",
-            "imgurl": "https://rosariumgardencenter.com/cdn/shop/files/Footer-Logo.png?v=1750725632",
+            "imgurl": "images/rosarium.webp",
             "memberlevel": 3
         },
         {
@@ -53,7 +53,7 @@
             "companyaddress": "225 W Indiana Ave, Spokane, WA 99205",
             "phonenum": "(509)-536-7746",
             "url": "https://paradisefibers.com/",
-            "imgurl": "https://paradisefibers.com/cdn/shop/files/nt-logo-600_1_5ad1bb45-6d03-4937-86b4-051855ad04a9.png?v=1771998792&width=300",
+            "imgurl": "images/paradise.webp",
             "memberlevel": 1
         }
     ]
