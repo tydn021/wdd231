@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <meta name="description" content="The Chamber of Commerce Home page I am making for WDD 231.">
+    <meta name="author" content="Tyler Nelson">
+    <meta property="og:title" content="WDD 231 - Home Page - Tyler Nelson" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="The Chamber of Commerce Home page I am making for WDD 231." />
+    <meta property="og:url" content="https://tydn021.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:image" content="https://tydn021.github.io/wdd231/chamber/images/spokane-valley.webp" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <link rel="icon" href="images/sunshine.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="images/sunshine.svg" alt="sunshine">
+            <span>Spokane Valley Chamber of Commerce</span>
+        </div>
+
+        <div class="right">
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+            </nav>
+            <img src="images/circle-half.svg" alt="half circle">
+            <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        </div>
+    </header>
+
+    <div class="hero-image">
+            <img src="images/spokane-valley.webp" alt="spokane valley">
+            <div class="keynote">
+                <button>Keynote Tickets!</button>
+            </div>
+        </div>
+
+    <main class="home-main">
+
+        <h2>Home</h2>
+
+        <section class="events">
+            <h3>Events</h3>
+        </section>
+
+        <section class="current-weather">
+            <h3>Current Weather</h3>
+            <img id="weather-icon" src="" alt="">
+            <span id="current-temp"></span>
+            <P><span id="description"></span></P>
+            <p>High: <span id="high"></span></p>
+            <p>Low: <span id="low"></span></p>
+            <p>Humidity: <span id="humidity"></span></p>
+        </section>
+
+        <section class="forecast">
+            <h3>Weather Forecast</h3>
+            <div id="forecast-data"></div>
+
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <article>
+                <h2>Spokane Valley Chamber of Commerce</h2>
+                <address>9842 N. Unknown Ave<br>
+                    Spokane, WA 99208<br>
+                    info@spokanevalleycoc.org<br>
+                    (509) 555-0100</address>
+            </article>
+        </section>
+
+        <section class="logo">
+            <img src="images/linkedin.svg" alt="linkedin">
+            <img src="images/facebook.svg" alt="facebook">
+            <img src="images/youtube.svg" alt="youtube">
+        </section>
+
+        <section>
+            <article>
+                <h3 class="hidden">None</h3>
+                <p>WDD231 Class Project</p>
+                <p>Tyler Nelson</p>
+                <p> &copy;<span id="currentyear"></span> Spokane Valley Chamber of Commerce</p>
+                <p class="last">Last Modification: <span id="lastModified"></span></p>
+            </article>
+        </section>
+    </footer>
+    
+</body>
+</html>
