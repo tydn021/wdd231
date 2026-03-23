@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/members.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/members.js" defer></script>
     <link rel="icon" href="images/sunshine.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,6 +27,7 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="left">
@@ -47,35 +50,39 @@
     </header>
 
     <div class="hero-image">
-            <img src="images/spokane-valley.webp" alt="spokane valley">
-            <div class="keynote">
-                <button>Keynote Tickets!</button>
-            </div>
+        <img src="images/spokane-valley.webp" alt="spokane valley">
+        <div class="keynote">
+            <button>Keynote Tickets!</button>
         </div>
+    </div>
 
-    <main class="home-main">
+    <main>
 
-        <h2>Home</h2>
+        <div class="home-main">
 
-        <section class="events">
-            <h3>Events</h3>
-        </section>
+            <h2>Home</h2>
 
-        <section class="current-weather">
-            <h3>Current Weather</h3>
-            <img id="weather-icon" src="" alt="">
-            <span id="current-temp"></span>
-            <P><span id="description"></span></P>
-            <p>High: <span id="high"></span></p>
-            <p>Low: <span id="low"></span></p>
-            <p>Humidity: <span id="humidity"></span></p>
-        </section>
+            <section class="events">
+                <h3>Events</h3>
+            </section>
 
-        <section class="forecast">
-            <h3>Weather Forecast</h3>
-            <div id="forecast-data"></div>
+            <section class="current-weather">
+                <h3>Current Weather</h3>
+                <img id="weather-icon" src="" alt="">
+                <span id="current-temp"></span>
+                <P><span id="description"></span></P>
+                <p>High: <span id="high"></span></p>
+                <p>Low: <span id="low"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+            </section>
 
-        </section>
+            <section class="forecast">
+                <h3>Weather Forecast</h3>
+                <div id="forecast-data"></div>
+
+            </section>
+        </div>
+        <div id="cards" class="spotlight-cards"></div>
     </main>
 
     <footer>
@@ -105,6 +112,7 @@
             </article>
         </section>
     </footer>
-    
+
 </body>
+
 </html>

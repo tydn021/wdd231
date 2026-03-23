@@ -1,4 +1,7 @@
 const dataSource = "data/members.json";
+const directoryCards = document.querySelector('.grid-cards')
+const spotlightCards = document.querySelector('.spotlight-cards')
+
 
 let allMembers = [];
 
@@ -6,8 +9,14 @@ async function getMemberData() {
     const response = await fetch(dataSource);
     const data = await response.json();
     allMembers = data.members;
-    
-    displayMemberGrid(allMembers);
+
+    if (spotlightCards) {
+        spotlightMembers(allMembers);
+    }
+
+    if (directoryCards && !spotlightCards) {
+        displayMemberGrid(allMembers);
+    }
 }
 
 const displayMemberGrid = (members) => {
@@ -21,7 +30,7 @@ const displayMemberGrid = (members) => {
         let url = document.createElement('p');
         let memberLevel = document.createElement('span');
 
-        
+
         logo.setAttribute('src', member.imgurl);
         logo.setAttribute('alt', `logo of ${member.companyname}`);
         logo.setAttribute('loading', 'lazy');
@@ -30,9 +39,9 @@ const displayMemberGrid = (members) => {
         address.textContent = `${member.companyaddress}`;
         phone.textContent = `${member.phonenum}`;
         url.textContent = `${member.url}`;
-        memberLevel.classList.add(member.memberlevel === 3 ? 'gold' : member.memberlevel === 2 ? 'silver' :'standard');
-        memberLevel.textContent = `${member.memberlevel === 3 ? 'Gold' : member.memberlevel === 2 ? 'Silver' :'Basic'}`;
-        
+        memberLevel.classList.add(member.memberlevel === 3 ? 'gold' : member.memberlevel === 2 ? 'silver' : 'standard');
+        memberLevel.textContent = `${member.memberlevel === 3 ? 'Gold' : member.memberlevel === 2 ? 'Silver' : 'Basic'}`;
+
 
         card.appendChild(logo);
         card.appendChild(companyName);
@@ -40,7 +49,7 @@ const displayMemberGrid = (members) => {
         card.appendChild(phone);
         card.appendChild(url);
         card.appendChild(memberLevel);
-        
+
 
         cards.appendChild(card);
     });
@@ -76,24 +85,31 @@ const displayMemberTable = (members) => {
 }
 
 const gridLink = document.querySelector("#grid");
+if (gridLink) {
+    gridLink.addEventListener("click", (event) => {
+        event.preventDefault();
 
-gridLink.addEventListener("click", (event)=> {
-	event.preventDefault();
+        document.querySelector("#cards").innerHTML = "";
 
-	document.querySelector("#cards").innerHTML = "";
-
-	displayMemberGrid(allMembers);
-})
+        displayMemberGrid(allMembers);
+    })
+}
 
 const tableLink = document.querySelector("#table");
+if (tableLink) {
+    tableLink.addEventListener("click", (event) => {
+        event.preventDefault();
 
-tableLink.addEventListener("click", (event)=> {
-	event.preventDefault();
+        document.querySelector("#cards").innerHTML = "";
 
-	document.querySelector("#cards").innerHTML = "";
+        displayMemberTable(allMembers);
+    })
+}
 
-	displayMemberTable(allMembers);
-})
 
+function spotlightMembers(members) {
+    let spotlightMembers = members.filter(item => item.memberlevel > 1).sort(() => Math.random() - 0.5).slice(0, 3);
+    displayMemberGrid(spotlightMembers);
+}
 
 getMemberData();

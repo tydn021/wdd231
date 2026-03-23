@@ -129,6 +129,7 @@ footer address {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .navigation a {
@@ -295,8 +296,42 @@ button {
     color: #333333;
 }
 
+#cards td {
+    padding: 0;
+    overflow-wrap: break-word;
+
+}
+
 #cards table tr:nth-child(even) {
     background-color: var(--accent4-color);
     color: var(--bkcolor2);
-
+    
 }
+
+@media (max-width: 600px) {
+    
+    #cards table,
+    #cards thead,
+    #cards tbody,
+    #cards tr,
+    #cards td,
+    #cards th {
+        display: block;
+        width: 100%;
+    }
+
+    #cards thead {
+        display: none;
+    }
+}
+
+/* Home Page */
+
+.home-main section{
+    background-color: #eee;
+}
+
+.home-main section h3 {
+    background-color: var(--secondary-color);
+}
+
