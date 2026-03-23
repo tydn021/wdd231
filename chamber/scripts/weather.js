@@ -66,7 +66,7 @@ function displayForecast(data) {
         let dayName = date.toLocaleDateString('en-us', {weekday:'short'});
         let p = document.createElement('p');
 
-        p.innerHTML = `${dayName}: ${day.main.temp.toFixed(0)}°F`;
+        p.innerHTML = `<span class= "forecast-temp">${dayName}:</span> ${day.main.temp.toFixed(0)}°F`;
         forecast.appendChild(p);
     })
 

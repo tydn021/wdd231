@@ -57,7 +57,7 @@
         grid-template-columns: 2fr 1fr 1fr;
     }
     
-    .home-main h2 {
+    .home-main h1 {
         grid-column: 1 / 4;
     }
 

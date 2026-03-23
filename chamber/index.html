@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Home Page - Spokane Valley Chamber of Commerce</title>
     <meta name="description" content="The Chamber of Commerce Home page I am making for WDD 231.">
     <meta name="author" content="Tyler Nelson">
     <meta property="og:title" content="WDD 231 - Home Page - Tyler Nelson" />
@@ -39,7 +39,7 @@
             <nav id="nav-bar" class="navigation">
                 <ul>
                     <li class="current"><a href="#">Home</a></li>
-                    <li><a href="#">Directory</a></li>
+                    <li><a href="">Directory</a></li>
                     <li><a href="#">Join</a></li>
                     <li><a href="#">Discover</a></li>
                 </ul>
@@ -60,26 +60,34 @@
 
         <div class="home-main">
 
-            <h2>Home</h2>
+            <h1>Home</h1>
 
             <section class="events">
                 <h3>Events</h3>
+                <div class="event-list">
+                    <ul>
+                        <li>Spokane Garden Expo at Spokane Community College</li>
+                        <li>Spokane Train Show</li>
+                        <li>Spokane Arts and Crafts Expo</li>
+                    </ul>
+                </div>
             </section>
 
             <section class="current-weather">
                 <h3>Current Weather</h3>
-                <img id="weather-icon" src="" alt="">
-                <span id="current-temp"></span>
-                <P><span id="description"></span></P>
-                <p>High: <span id="high"></span></p>
-                <p>Low: <span id="low"></span></p>
-                <p>Humidity: <span id="humidity"></span></p>
+                <div class="weather-content"><img id="weather-icon" src="" alt="">
+                    <div><span id="current-temp"></span>
+                        <P><span id="description"></span></P>
+                        <p><span class="p-bold">High:</span> <span id="high"></span></p>
+                        <p><span class="p-bold">Low:</span> <span id="low"></span></p>
+                        <p><span class="p-bold">Humidity:</span> <span id="humidity"></span></p>
+                    </div>
+                </div>
             </section>
 
             <section class="forecast">
                 <h3>Weather Forecast</h3>
                 <div id="forecast-data"></div>
-
             </section>
         </div>
         <div id="cards" class="spotlight-cards"></div>

@@ -186,17 +186,6 @@ main h1 {
     right: 20px;
 }
 
-/* Home Page */
-
-.home-main section {
-    text-align: left;
-    border: solid 1px black;
-    border-radius: 12px;
-    margin: 24px;
-}
-
-
-
 /* Buttons */
 
 button {
@@ -305,11 +294,11 @@ button {
 #cards table tr:nth-child(even) {
     background-color: var(--accent4-color);
     color: var(--bkcolor2);
-    
+
 }
 
 @media (max-width: 600px) {
-    
+
     #cards table,
     #cards thead,
     #cards tbody,
@@ -327,11 +316,85 @@ button {
 
 /* Home Page */
 
-.home-main section{
+.home-main section {
     background-color: #eee;
+    border-radius: 15px;
+        text-align: left;
+    border: solid 1px black;
+    margin: 24px;
 }
 
 .home-main section h3 {
     background-color: var(--secondary-color);
+    margin: 0;
+    padding: 15px;
 }
 
+.home-main p {
+    text-align: center;
+}
+
+.weather-content {
+    display: flex;
+    flex-direction: row;
+    align-items: relative;
+    flex-shrink: 0;
+    margin: auto 0;
+    padding: 30px
+}
+
+#current-temp {
+    display: block;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#weather-icon {
+    width: 100px;
+    height: auto;
+    padding:10px
+}
+
+.forecast {
+     display: flex;
+     flex-direction: column;
+}
+
+#forecast-data {
+    align-self: center;
+    margin: auto 0;
+}
+
+#forecast-data p {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.forecast-temp {
+    font-weight: bold;
+}
+
+.events {
+     display: flex;
+     flex-direction: column;
+}
+
+.event-list {
+     align-self: center;
+    margin: auto 0;
+    font-size: 1.75rem;
+}
+
+.event-list li {
+     padding: 5px;
+}
+
+.p-bold {
+    font-weight: bold;
+}
+
+#description {
+    text-transform: capitalize;
+    font-size: 1.25rem;
+}
