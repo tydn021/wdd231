@@ -184,6 +184,14 @@ main h1 {
     position: absolute;
     bottom: 20px;
     right: 20px;
+    z-index: 20;
+}
+
+.keynote button {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: var(--accent1-color);
 }
 
 /* Buttons */
