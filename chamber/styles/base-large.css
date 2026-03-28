@@ -75,3 +75,19 @@
         grid-column: 1 / 4;
     }
 }
+
+/* Join Main */
+
+.join-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;;
+}
+
+.join-form {
+    grid-column: 1/2;
+}
+
+.join-cards {
+    grid-column: 2/3;
+}
+

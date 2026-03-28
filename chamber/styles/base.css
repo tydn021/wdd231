@@ -405,3 +405,76 @@ button {
     text-transform: capitalize;
     font-size: 1.25rem;
 }
+
+/* Form */
+
+.join-form label {
+    display: block;
+    margin-left: 15px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+
+.join-form input {
+    display: block;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.join-form fieldset {
+    display: inline-block;
+}
+
+/* Join Cards */
+
+.join-cards section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--secondary-color);
+    text-align: center;
+    border-radius: 30px 0 30px 0;
+    border: 1px solid black;
+}
+
+.join-cards h2 {
+    padding-top: 20px;
+}
+
+.join-cards button {
+    margin: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    background-color: var(--accent1-color);
+    border: none;
+    border-radius: 20px;
+    text-align: none;
+    width: fit-content;
+    font-size: 1.5rem;
+}
+
+dialog[open] {
+    animation: fadein 0.5s ease-in-out;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+dialog::backdrop {
+    background-color: rgb(0, 0, 0, .5);
+}

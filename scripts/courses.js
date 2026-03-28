@@ -78,6 +78,8 @@ const courses = [
     }
 ]
 
+const courseDetails = document.querySelector('#course-details')
+
 createCourseCard(courses);
 
 const allLink = document.querySelector("#all");
@@ -134,6 +136,10 @@ function createCourseCard(filteredCourses) {
             card.classList.add("completed");
 
         }
+
+        card.addEventListener('click', () => {
+        displayCourseDetails(course);
+    })
     }
 );
 
@@ -141,4 +147,24 @@ const creditTotal = filteredCourses.reduce((sum, course) => sum + course.credits
 document.querySelector("#credit-total").textContent = `The total credit score for courses listed above is ${creditTotal}`;
 }
 
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closemodal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
 
+    `;
+
+    const closeModal = document.querySelector('#closemodal');
+
+    courseDetails.showModal();
+
+    closeModal.addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
