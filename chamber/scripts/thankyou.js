@@ -14,11 +14,11 @@ console.log(myInfo.get('email'));
 
 
 document.querySelector('#results').innerHTML = `
-<p>Member: ${myInfo.get('first')} ${myInfo.get('last')}</p>
-<p>Business: ${myInfo.get('org-name')}</p>
-<p>Your Phone: ${myInfo.get('phone')}</p>
-<p>Your Email: ${myInfo.get('email')}</p>
-<p>Your Membership Level: ${myInfo.get('membership-level')}</p>
+<p><b>Member</b>: ${myInfo.get('first')} ${myInfo.get('last')}</p>
+<p><b>Business</b>: ${myInfo.get('org-name')}</p>
+<p><b>Your Phone</b>: ${myInfo.get('phone')}</p>
+<p><b>Your Email</b>: ${myInfo.get('email')}</p>
+<p><b>Your Membership Level</b>: ${myInfo.get('membership-level')}</p>
 <p>${myInfo.get('timestamp')}</p>
 `;
 
