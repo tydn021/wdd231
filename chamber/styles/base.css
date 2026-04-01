@@ -33,8 +33,9 @@ header {
     font-size: 24px;
     padding-bottom: 0;
     flex-wrap: wrap;
-
 }
+
+
 
 .left {
     font-size: 1rem;
@@ -153,6 +154,7 @@ footer address {
 
 .navigation li {
     width: 100%;
+    font-size: 14px;
 }
 
 .navigation li.current {
@@ -423,8 +425,11 @@ button {
     font-size: 1.25rem;
 }
 
+/* Join Main */
 
-
+.join-main {
+    padding: 20px;
+}
 /* Form */
 
 .join-form{
@@ -476,11 +481,23 @@ button {
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
     background-color: var(--secondary-color);
     text-align: center;
     border-radius: 30px 0 30px 0;
     border: 1px solid black;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from{
+        transform: translateX(100%)
+    }
+    to{
+        transform: translateX(0)
+    }
 }
 
 .join-cards h2 {
@@ -499,6 +516,8 @@ button {
     width: fit-content;
     font-size: 1.5rem;
 }
+
+
 
  /* Dialog */
 
@@ -566,9 +585,10 @@ dialog button {
 
 .thankyou p {
     padding-left: 80px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
     font-size: 2rem;
     text-align: left;
+    margin-bottom: 0;
 }

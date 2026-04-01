@@ -1,0 +1,106 @@
+{
+    "houses": [
+        {
+            "name": "Witch's House",
+            "yeardone": 1921,
+            "architect": "Harry Oliver",
+            "description": "Completed in 1921, it was originally a Hollywood prop created by Harry Oliver, but was relocated to Walden Drive in the 1930's.",
+            "img": "images/witchs-hut.jpg"
+        },
+        {
+            "name": "",
+            "yeardone": 0,
+            "architect": "",
+            "description": "",
+            "img": "images/"
+        },
+        {
+            "name": "",
+            "yeardone": 0,
+            "architect": "",
+            "description": "",
+            "img": "images/"
+        },
+        {
+            "name": "",
+            "yeardone": 0,
+            "architect": "",
+            "description": "",
+            "img": "images/"
+        },
+        {
+            "name": "",
+            "yeardone": 0,
+            "architect": "",
+            "description": "",
+            "img": "images/"
+        },{
+            "name": "",
+            "yeardone": 0,
+            "architect": "",
+            "description": "",
+            "img": "images/"
+        },
+        {
+            "name": "",
+            "yeardone": 0,
+            "architect": "",
+            "description": "",
+            "img": "images/"
+        },
+        {
+            "name": "",
+            "yeardone": 0,
+            "architect": "",
+            "description": "",
+            "img": "images/"
+        },
+        {
+            "name": "",
+            "yeardone": 0,
+            "architect": "",
+            "description": "",
+            "img": "images/"
+        },
+        {
+            "name": "",
+            "yeardone": 0,
+            "architect": "",
+            "description": "",
+            "img": "images/"
+        },{
+            "name": "",
+            "yeardone": 0,
+            "architect": "",
+            "description": "",
+            "img": "images/"
+        },
+        {
+            "name": "",
+            "yeardone": 0,
+            "architect": "",
+            "description": "",
+            "img": "images/"
+        },
+        {
+            "name": "",
+            "yeardone": 0,
+            "architect": "",
+            "description": "",
+            "img": "images/"
+        },
+        {
+            "name": "",
+            "yeardone": 0,
+            "architect": "",
+            "description": "",
+            "img": "images/"
+        },{
+            "name": "",
+            "yeardone": 0,
+            "architect": "",
+            "description": "",
+            "img": "images/"
+        }
+    ]
+}
