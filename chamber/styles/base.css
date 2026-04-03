@@ -502,6 +502,12 @@ button {
 
 .join-cards h2 {
     padding-top: 20px;
+    font-size: 2rem;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .join-cards button {
