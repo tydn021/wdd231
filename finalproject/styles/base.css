@@ -3,7 +3,7 @@
     --secondary-color: #FFF2D0;
     --accent1-color: rgb(235, 214, 113);
     --accent2-color: #FFB2B2;
-    --accent3-color: #E36A6A;
+    --accent3-color: #A34444;
     --accent4-color: #1E453E;
     --bkcolor: #AC7D88;
     --bkcolor2: #FAF3E0;
@@ -25,11 +25,78 @@ body {
     background-color: var(--primary-color);
 }
 
+header {
+    display: flex;
+}
+
 header h1{
-    font-size: 4rem;
+    font-size: 2rem;
     text-align: center;
     color: var(--accent3-color);
 }
+
+.undercurly {
+    display: none;
+}
+
+/* HAMBURGER */
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--accent3-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+/* NAVIGATION */
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--accent3-color);
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: var(--secondary-color);
+}
+
+/* .navigation li.current::before {
+    content: "𓃇";
+} */
+
+.navigation a:hover {
+    background-color: var(--bkcolor);
+    color: var(--accent2-color);
+}
+
 
 
 main h2 {

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 45rem) {
+@media only screen and (min-width: 64rem) {
 
     /* Header */
 
@@ -115,5 +115,12 @@
     grid-column: 1/3;
 }
 
+/* Discover Cards */
+
+#allplaces{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 
 }

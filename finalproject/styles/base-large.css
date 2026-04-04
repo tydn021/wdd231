@@ -1,0 +1,57 @@
+@media only screen and (min-width: 45rem) {
+
+    /* Header */
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    .undercurly {
+        display: block;
+        justify-items: center;
+        font-size: 3rem;
+        padding-bottom: 25px;
+    }
+
+    .curlycue::before {
+        content: "꒰";
+    }
+
+    .curlycue::after {
+        content: "꒱";
+    }
+
+    /* Hamburger */
+    .hamburger {
+        display: none;
+    }
+
+    /* Navigation */
+
+    .navigation {
+        display: flex;
+        border-bottom: solid 1px black;
+        /* order: 2; */
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+        width: auto;
+    }
+
+    .navigation li {
+        width: auto;
+    }
+
+    .navigation a {
+        border: none;
+        font-size: 2rem;
+    }
+}
