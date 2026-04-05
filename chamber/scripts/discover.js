@@ -5,12 +5,23 @@ console.log(places);
 const showAll = document.querySelector('#allplaces');
 
 function displayPlaces(places) {
-    places.forEach(item => {
+
+    let fragment = document.createDocumentFragment();
+
+    places.forEach((item, index) => {
         const placeCard = document.createElement('div');
         const img = document.createElement('img');   
+
+        if(index === 0){
+            img.setAttribute('fetchpriority', 'high')
+        }
+        else{
+            img.setAttribute('loading', 'lazy');
+        };
         img.src = `images/${item.photo_url}`;
         img.alt = item.name;
-        img.loading = 'lazy';
+        img.setAttribute('width', '400');
+        img.setAttribute('height', '300');
 
         placeCard.appendChild(img);
 
@@ -29,8 +40,10 @@ function displayPlaces(places) {
 
         placeCard.appendChild(desc);
 
-        showAll.appendChild(placeCard);
+        fragment.appendChild(placeCard);
     });
+
+    showAll.appendChild(fragment);
 }
 
 displayPlaces(places);

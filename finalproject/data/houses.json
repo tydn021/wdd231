@@ -8,18 +8,18 @@
             "img": "images/witchs-hut.jpg"
         },
         {
-            "name": "",
-            "yeardone": 0,
-            "architect": "",
-            "description": "",
-            "img": "images/"
+            "name": "The Snow White Cottage",
+            "yeardone": 2005,
+            "architect": "Richey and Karen Morgan",
+            "description": "A handcrafted masterpiece in Olalla, Washington. This home features a 300-pound front door with hammered hinges, asymmetrical rooflines, and whimsical stonework that makes it look like it was pulled from the Disney film 'Snow White', and that movie .",
+            "img": "images/snowwhite.webp"
         },
         {
-            "name": "",
-            "yeardone": 0,
-            "architect": "",
-            "description": "",
-            "img": "images/"
+            "name": "Pink Cottage",
+            "yeardone": 1926,
+            "architect": "Hugh Comstock",
+            "description": "This house was designed by Hugh Comstock, but built by Thomas M. Browne. It's been renovated recently in the 1980's.",
+            "img": "images/pink-cottage.webp"
         },
         {
             "name": "",

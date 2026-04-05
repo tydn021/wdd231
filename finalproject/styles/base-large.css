@@ -11,11 +11,29 @@
         font-size: 4rem;
     }
 
+    .left {
+        order: 1;
+    }
+
     .undercurly {
+        order: 3;
         display: block;
         justify-items: center;
         font-size: 3rem;
         padding-bottom: 25px;
+    }
+
+    .left .favicon {
+        display: none;
+    }
+
+    .right {
+        margin-left: 0;
+        flex: none;
+    }
+
+    .right img {
+        display: none;
     }
 
     .curlycue::before {
@@ -35,13 +53,17 @@
 
     .navigation {
         display: flex;
+        justify-content: center;
         border-bottom: solid 1px black;
-        /* order: 2; */
+        width: fit-content;
+        order: 2;
     }
 
     .navigation ul {
+        padding: 0;
         display: flex;
         flex-direction: row;
+        justify-content: center;
         gap: .5rem;
         width: auto;
     }

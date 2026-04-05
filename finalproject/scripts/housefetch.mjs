@@ -18,17 +18,23 @@ export async function getHouseData() {
 
 export const displayHouses = (houses) => {
     const cards = document.querySelector('#cards');
-    houses.forEach((house) => {
+    houses.forEach((house, index) => {
         let card = document.createElement("section");
         let portrait = document.createElement("img");
-        let houseName = document.createElement('h2');
+        let houseName = document.createElement('h3');
         let year = document.createElement('p');
         let arch = document.createElement('p');
         let desc = document.createElement('p');
 
+        if(index === 0){
+            portrait.setAttribute('fetchpriority', 'high')
+        }
+        else{
+            portrait.setAttribute('loading', 'lazy');
+        };
+
         portrait.setAttribute('src', house.img);
         portrait.setAttribute('alt', `Portrait of ${house.name}`);
-        portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('height', '440');
         houseName.textContent = `${house.name}`;
         year.textContent = `Year Completed: ${house.yeardone}`;

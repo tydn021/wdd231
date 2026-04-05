@@ -126,7 +126,7 @@ footer address {
 
 .navigation {
     display: none;
-    order: 3;
+    order: 2;
 }
 
 .navigation.show {
@@ -601,6 +601,14 @@ dialog button {
 
 /* Discover Cards */
 
+.discover-main {
+    min-height: 80vh;
+}
+
+#allplaces {
+    min-height: 80vh;
+}
+
 #allplaces div {
     margin: 1rem 8px;
     border-color: var(--secondary-color);
@@ -623,16 +631,29 @@ dialog button {
 }
 
 #allplaces div img {
-    width: 100%;
+    width: 400px;
+    height: 300px;
     grid-area: picture;
+
+
 }
 
 #allplaces div p {
     margin: 1rem 10px;
     grid-area: description;
+    min-height: 100px;
 }
 
 #allplaces div address {
     margin: 1rem 10px;
     grid-area: location;
+}
+
+/* visit span */
+
+#visits {
+    display: block;
+    min-height: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
 }
