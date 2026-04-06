@@ -1,5 +1,7 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 40rem) {
     #allplaces div {
+
+    grid-template-columns: 1fr 2fr;
 
     grid-template-areas: 
     "picture name"
@@ -7,4 +9,8 @@
     "picture location"
     ;
 }
+
+ .hover:hover {
+        box-shadow: 0 0 50px #333;
+    }
 }

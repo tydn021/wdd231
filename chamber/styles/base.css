@@ -601,16 +601,17 @@ dialog button {
 
 /* Discover Cards */
 
-.hover:hover {
-	box-shadow: 0 0 50px #333;
-}
-
 .discover-main {
     min-height: 80vh;
+    padding-bottom: 10px;
+    margin-bottom: 0;
 }
 
 #allplaces {
     min-height: 80vh;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 50px solid transparent;
 }
 
 #allplaces div {
@@ -619,11 +620,16 @@ dialog button {
     background-color: #eee;
     border-radius: 8px;
     overflow: hidden;
+    justify-items: center;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
 
     display: grid;
     grid-template-areas: 
-    "name"
     "picture"
+    "name"
     "description"
     "location"
     ;
@@ -635,18 +641,19 @@ dialog button {
 }
 
 #allplaces div img {
+    display: block;
+    justify-self: center;
     width: 400px;
     height: 300px;
     grid-area: picture;
-    margin: 25px;
-
-
 }
 
 #allplaces div p {
     margin: 1rem 10px;
+    margin-bottom: 0;
     grid-area: description;
     min-height: 100px;
+    
 }
 
 #allplaces div address {

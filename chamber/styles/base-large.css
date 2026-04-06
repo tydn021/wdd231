@@ -56,7 +56,7 @@
     .navigation a {
         border: none;
     }
-    
+
     .left {
         margin: 0;
         padding: 0;
@@ -64,7 +64,7 @@
     }
 
     .right {
-         margin: 0;
+        margin: 0;
         padding: 0;
         order: 3;
         flex: none;
@@ -111,16 +111,20 @@
         grid-column: 2/3;
     }
 
-    .join-title{
-    grid-column: 1/3;
-}
+    .join-title {
+        grid-column: 1/3;
+    }
 
-/* Discover Cards */
+    /* Discover Cards */
 
-#allplaces{
+    #allplaces {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+
+    .hover:hover {
+        box-shadow: 0 0 50px #333;
     }
 
 }
