@@ -140,7 +140,11 @@ header h1{
     object-fit: cover;
 }
 
-
+main {
+    /* min-height: 80vh; */
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
 
 main h2 {
     color: var(--accent3-color);
