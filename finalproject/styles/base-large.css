@@ -82,7 +82,6 @@
     #cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
     }
 
     #cards section {
@@ -95,8 +94,13 @@
         ;
     }
 
+    #cards h3 {
+        justify-self: center;
+    }
+
     #cards img {
-        justify-content: center;
+        display: block;
+        justify-self: center;
         align-items: center;
     }
 }
