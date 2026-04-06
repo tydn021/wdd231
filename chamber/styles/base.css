@@ -601,6 +601,10 @@ dialog button {
 
 /* Discover Cards */
 
+.hover:hover {
+	box-shadow: 0 0 50px #333;
+}
+
 .discover-main {
     min-height: 80vh;
 }
@@ -634,6 +638,7 @@ dialog button {
     width: 400px;
     height: 300px;
     grid-area: picture;
+    margin: 25px;
 
 
 }

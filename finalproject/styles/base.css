@@ -186,6 +186,62 @@ main section ul {
     padding-left: 30px;
 }
 
+/* Houses Main */
+
+.houses-main {
+    display: grid;
+}
+
+/* Houses Csrds */
+
+.hover:hover {
+	box-shadow: 0 0 50px #333;
+}
+
+#cards section {
+    margin: 1rem 8px;
+    border: 3px solid var(--accent3-color);
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "picture"
+    "picture architect year"
+    "picture description"
+}
+
+#cards section h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+#cards section img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    grid-area: picture;
+
+
+}
+
+#cards .desc {
+    margin: 1rem 10px;
+    grid-area: description;
+    min-height: 100px;
+}
+
+#cards .arch {
+    margin: 1rem 10px;
+    grid-area: architect;
+}
+
+#cards .year {
+    margin: 1rem 10px;
+    grid-area: year;
+}
+
 .wireframes {
     grid-column: 1/3;
 

@@ -76,4 +76,27 @@
         border: none;
         font-size: 2rem;
     }
+
+    /* House Cards */
+
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #cards section {
+        grid-template-areas:
+            "name"
+            "picture"
+            "architect"
+            'year'
+            "description"
+        ;
+    }
+
+    #cards img {
+        justify-content: center;
+        align-items: center;
+    }
 }

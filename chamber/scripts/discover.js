@@ -22,6 +22,7 @@ function displayPlaces(places) {
         img.alt = item.name;
         img.setAttribute('width', '400');
         img.setAttribute('height', '300');
+        img.classList.add('hover');
 
         placeCard.appendChild(img);
 

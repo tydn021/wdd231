@@ -40,6 +40,11 @@ export const displayHouses = (houses) => {
         year.textContent = `Year Completed: ${house.yeardone}`;
         arch.textContent = `Architect: ${house.architect}`;
         desc.textContent = `${house.description}`;
+        portrait.classList.add(`picture`);
+        year.classList.add(`year`);
+        arch.classList.add(`architect`);
+        desc.classList.add(`description`);
+        portrait.classList.add(`hover`);
 
         card.appendChild(portrait);
         card.appendChild(houseName);
