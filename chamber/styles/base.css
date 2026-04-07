@@ -621,10 +621,11 @@ dialog button {
     border-radius: 8px;
     overflow: hidden;
     justify-items: center;
+    align-items: center;
     margin-bottom: 0;
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 20px;
+    padding: 25px;
+    margin: 10px;
 
     display: grid;
     grid-template-areas: 
@@ -643,8 +644,8 @@ dialog button {
 #allplaces div img {
     display: block;
     justify-self: center;
-    width: 400px;
-    height: 300px;
+    width: 90%;
+    height: auto;
     grid-area: picture;
 }
 
