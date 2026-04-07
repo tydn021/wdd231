@@ -11,13 +11,14 @@
     <meta property="og:type" content="website" />
     <meta property="og:description" content="The Storybook Homes home page I am making for WDD 231." />
     <meta property="og:url" content="https://tydn021.github.io/wdd231/finalproject/index.html" />
-    <meta property="og:image" content="https://ca-times.brightspotcdn.com/dims4/default/13d5e7e/2147483647/strip/true/crop/1500x996+0+0/resize/1200x797!/format/webp/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F44%2F69%2F9d5c933645f38d732b31536e5583%2Ftr-carmel-cottageofsweets-visitcarmel.jpg" />
+    <meta property="og:image" content="https://tydn021.github.io/wdd231/finalproject/images/hero-image.webp>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-medium.css">
     <link rel="stylesheet" href="styles/base-large.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
     <script type="module" src="scripts/main.mjs"></script>
     <link rel="icon" href="images/cottage.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,11 +57,14 @@
         <img src="images/hero-image.webp" alt="storybook-hero" loading="lazy">
     </div>
     <main class="index-main">
+        <div class="index-title">
         <h2>Home</h2>
+        <span id="visits"></span>
+        </div>
         <div>
         <section>
-            <h3>History of Storybook Style!</h3>
-            <P>Back in the early days of Hollywood, California, movie sets were a huge undertaking</P>
+            <h3 class="history-title">History of Storybook Style!</h3>
+            <P>Back in the early days of Hollywood, California, movie sets were a huge undertaking. Many fairytale and medieval themed films were shot at this time, and so each set had to be handcrafted from scratch. The builders of these movie sets however would often fall in love with the sets they've created. Many of these workers would go on to build their own houses in the style of whimsical fairy-tale like European architecture. Another factor that contributed to the rise of early Storybook Style was World War 1. With all of the American soldiers  </P>
         </section>
         </div>
 
@@ -88,9 +92,9 @@
 
                 <h3>Select Tour Day Length</h3>
                 <fieldset>
-                    <label class="level"><input type="radio" name="membership-level" value="1-day" checked> 1-Day Tour</label>
-                    <label class="level"><input type="radio" name="membership-level" value="2-day"> 2-Day Tour</label>
-                    <label class="level"><input type="radio" name="membership-level" value="3-day"> 3-Day Tour</label>
+                    <label class="level"><input type="radio" name="tour-level" value="1-day" checked> 1-Day Tour</label>
+                    <label class="level"><input type="radio" name="tour-level" value="2-day"> 2-Day Tour</label>
+                    <label class="level"><input type="radio" name="tour-level" value="3-day"> 3-Day Tour</label>
                 </fieldset>
 
                 <input class="join-button" type="submit" value="Join our Tour!">
@@ -99,5 +103,34 @@
 
 
     </main>
+    <footer>
+        <section>
+            <article>
+                <h2>Storybook Homes</h2>
+                <address>9842 N. Unknown Ave<br>
+                    Spokane, WA 99208<br>
+                    info@spokanevalleycoc.org<br>
+                    (509) 555-0100</address>
+            </article>
+        </section>
+
+        <section class="logo">
+            <img src="images/linkedin.svg" alt="linkedin">
+            <img src="images/facebook.svg" alt="facebook">
+            <img src="images/youtube.svg" alt="youtube">
+        </section>
+
+        <section>
+            <article>
+                <h3 class="hidden">None</h3>
+                <p>WDD231 Final Project</p>
+                <p>Tyler Nelson</p>
+                <p> &copy;<span id="currentyear"></span> Storybook Homes</p>
+                <p class="last">Last Modification: <span id="lastModified"></span></p>
+                <p><a href="attributions.html">Attributions</a></p>
+            </article>
+        </section>
+    </footer>
+
 </body>
 </html>

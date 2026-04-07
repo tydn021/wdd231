@@ -81,6 +81,10 @@
         grid-column: 1 / 4;
     }
 
+    .home-main span {
+        grid-column: 1/4;
+    }
+
 
     /* Cards */
 

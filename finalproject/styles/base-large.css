@@ -44,6 +44,24 @@
         content: "꒱";
     }
 
+      /* Footer */
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer img {
+        width: auto;
+        height: 50px;
+    }
+
     /* Hamburger */
     .hamburger {
         display: none;
@@ -84,8 +102,9 @@
         grid-template-columns: 2fr 1fr;
     }
 
-    .index-main h2 {
+    .index-title {
         grid-column: 1/3;
+        padding-bottom: 20px;
     }
 
     
