@@ -35,10 +35,10 @@ export const displayHouses = (houses) => {
 
         portrait.setAttribute('src', house.img);
         portrait.setAttribute('alt', `Portrait of ${house.name}`);
-        portrait.setAttribute('height', '440');
+        portrait.setAttribute('height', '300');
         houseName.textContent = `${house.name}`;
-        year.textContent = `Year Completed: ${house.yeardone}`;
-        arch.textContent = `Architect: ${house.architect}`;
+        year.textContent = `: ${house.yeardone}`;
+        arch.textContent = `: ${house.architect}`;
         desc.textContent = `${house.description}`;
         portrait.classList.add(`picture`);
         year.classList.add(`year`);

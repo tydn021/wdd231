@@ -5,13 +5,13 @@
             "yeardone": 1921,
             "architect": "Harry Oliver",
             "description": "Completed in 1921, it was originally a Hollywood prop created by Harry Oliver, but was relocated to Walden Drive in the 1930's.",
-            "img": "images/witchs-hut.jpg"
+            "img": "images/witchs-hut.webp"
         },
         {
             "name": "The Snow White Cottage",
             "yeardone": 2005,
             "architect": "Richey and Karen Morgan",
-            "description": "A handcrafted masterpiece in Olalla, Washington. This home features a 300-pound front door with hammered hinges, asymmetrical rooflines, and whimsical stonework that makes it look like it was pulled from the Disney film 'Snow White', and that movie .",
+            "description": "A handcrafted masterpiece in Olalla, Washington. This home looks like it was pulled from the Disney film 'Snow White', and in fact that movie served as the inspiration for this house.",
             "img": "images/snowwhite.webp"
         },
         {
@@ -22,16 +22,16 @@
             "img": "images/pink-cottage.webp"
         },
         {
-            "name": "",
-            "yeardone": 0,
-            "architect": "",
-            "description": "",
-            "img": "images/"
+            "name": "Carmel Weavers Studio",
+            "yeardone": 1922,
+            "architect": "Lee Gottfried",
+            "description": "Ruth Kuster and her fellow weavers requested this Tudor style little studio form Lee Gottfried and it has been moved around Carmel and has served many purposes. It is now the Cottage of Sweets",
+            "img": "images/weavers.webp"
         },
         {
-            "name": "",
-            "yeardone": 0,
-            "architect": "",
+            "name": "The Hobby House",
+            "yeardone": 1926,
+            "architect": "Hugh Comstock",
             "description": "",
             "img": "images/"
         },{
@@ -100,7 +100,7 @@
             "yeardone": 2017,
             "architect": "Timothy Lindberg and Daniel Huscroft",
             "description": "A more recent addition, this house is only 450-500 sq. feet, but packs a lot personality into a small space!",
-            "img": "images/"
+            "img": "images/by-the-sea.webp"
         }
     ]
 }
