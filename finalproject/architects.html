@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="styles/base-large.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/visits.js" defer></script>
+    <script src="scripts/main.mjs" type="module"></script>
+    <script src="scripts/architects.js" defer></script>
+     <script src="scripts/visits.js" defer></script>
     <script type="module" src="scripts/main.mjs"></script>
     <link rel="icon" href="images/cottage.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,7 +63,17 @@
 
         <div class="architect-cards">
             <section class="slide-left">
+                <h3>Harry Oliver</h3>
+                <button class="open-button" data-modal="oliver-info">Learn More!</button>
+            </section>
+
+            <section class="slide-right">
                 <h3>Hugh Comstock</h3>
+                <button class="open-button" data-modal="comstock-info">Learn More!</button>
+            </section>
+
+            <section class="slide-left">
+                <h3>Harry Oliver</h3>
                 <button class="open-button" data-modal="comstock-info">Learn More!</button>
             </section>
 
@@ -70,11 +82,55 @@
                 <button class="open-button" data-modal="comstock-info">Learn More!</button>
             </section>
 
+
         </div>
     </main>
     <footer>
+        <section>
+            <article>
+                <h2>Storybook Homes</h2>
+                <address>9842 N. Unknown Ave<br>
+                    Spokane, WA 99208<br>
+                    info@spokanevalleycoc.org<br>
+                    (509) 555-0100</address>
+            </article>
+        </section>
 
+        <section class="logo">
+            <img src="images/linkedin.svg" alt="linkedin" width="30" height="30">
+            <img src="images/facebook.svg" alt="facebook" width="30" height="30">
+            <img src="images/youtube.svg" alt="youtube" width="30" height="30">
+        </section>
+
+        <section>
+            <article>
+                <h3 class="hidden">None</h3>
+                <p>WDD231 Final Project</p>
+                <p>Tyler Nelson</p>
+                <p> &copy;<span id="currentyear"></span> Storybook Homes</p>
+                <p class="last">Last Modification: <span id="lastModified"></span></p>
+                <p><a href="attributions.html">Attributions</a></p>
+            </article>
+        </section>
     </footer>
+
+    <dialog id="oliver-info">
+        <button class="closemodal">✖</button>
+
+        <h3>Harry Oliver</h3>
+        <ul>
+            <li><b>Birth</b>: April 17th, 1893</li>
+            <li><b>Death</b>: June 1st, 1950</li>
+        </ul>
+
+
+        <p>If you read through the information on the houses presented on this site, you will notice a name come up
+            repeatedly; Hugh Comstock. A man from humble origins being born in Evanston, Illinois on a farm, his family
+            would sell the farm and move to California. Hugh Comstock would eventually find himself serving in Word War
+            1 and returning to start a life with his wife </p>
+
+    </dialog>
+
     <dialog id="comstock-info">
         <button class="closemodal">✖</button>
 
@@ -85,7 +141,10 @@
         </ul>
 
 
-        <p>If you read through the information on the houses presented on this site, you will notice a name come up repeatedly; Hugh Comstock. A man from humble origins being born in Evanston, Illinois on a farm, his family would sell the farm and move to California. Hugh Comstock would eventually find himself serving in Word War 1 and returning to start a life with his wife </p>
+        <p>If you read through the information on the houses presented on this site, you will notice a name come up
+            repeatedly; Hugh Comstock. A man from humble origins being born in Evanston, Illinois on a farm, his family
+            would sell the farm and move to California. Hugh Comstock would eventually find himself serving in Word War
+            1 and returning to start a life with his wife </p>
 
     </dialog>
 </body>

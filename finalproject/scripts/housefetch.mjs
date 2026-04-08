@@ -1,19 +1,20 @@
 const houseData = "data/houses.json";
 
 export async function getHouseData() {
-    try 
-    {const response = await fetch(houseData);
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data); // testing only
-      return data.houses; }
-     else {
-        throw Error(await response.text());
-     }
-  } 
-  catch (error) {
-      console.log(error);
-  }
+    try {
+        const response = await fetch(houseData);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data); // testing only
+            return data.houses;
+        }
+        else {
+            throw Error(await response.text());
+        }
+    }
+    catch (error) {
+        console.log(error);
+    }
 }
 
 export const displayHouses = (houses) => {
@@ -26,15 +27,16 @@ export const displayHouses = (houses) => {
         let arch = document.createElement('p');
         let desc = document.createElement('p');
 
-        if(index === 0){
+        if (index === 0) {
             portrait.setAttribute('fetchpriority', 'high')
         }
-        else{
+        else {
             portrait.setAttribute('loading', 'lazy');
         };
 
         portrait.setAttribute('src', house.img);
         portrait.setAttribute('alt', `Portrait of ${house.name}`);
+        portrait.setAttribute('width', '300');
         portrait.setAttribute('height', '300');
         houseName.textContent = `${house.name}`;
         year.textContent = `: ${house.yeardone}`;

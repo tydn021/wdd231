@@ -1,7 +1,7 @@
 :root {
     --primary-color: rgb(111, 178, 210);
     --secondary-color: #85C88A;
-    --accent1-color: rgb(235, 214, 113);
+    --accent1-color: #ebd671;
     --accent2-color: #EEEEEE;
     --accent3-color: #333333;
     --accent4-color: #1E453E;
@@ -460,7 +460,7 @@ button {
 
 .join-form .level {
     font-weight: normal;
-    display: inline-block;
+    border: none;
 }
 
 .join-form .join-button {

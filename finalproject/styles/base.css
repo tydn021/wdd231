@@ -163,6 +163,9 @@ main li {
 /* Footer */
 
 footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     color: var(--accent4-color)
 }
 
@@ -250,10 +253,29 @@ main section ul {
 .index-main h3 {
     font-size: 2rem;
     padding: 20px;
+    padding-bottom: 10px;
+}
+
+.index-main section p {
+    font-size: 1.25rem;
+    padding: 10px;
+
 }
 
 .history-title {
     color: var(--accent3-color);
+}
+
+.index-main section figure {
+    padding: 25px;
+}
+
+.history-witch {
+    float: right;
+}
+
+.history-pink {
+    float: left;
 }
 
 
@@ -285,7 +307,8 @@ main section ul {
     border-radius: 20px;
     background-color: var(--accent4-color);
     color: var(--accent2-color);
-    padding-bottom: 20px;
+    padding: 20px;
+    margin: 10px;
 }
 .join-form label {
     display: block;
@@ -296,7 +319,13 @@ main section ul {
     font-weight: bold;
 }
 
+.join-form fieldset {
+    display: inline-block;
+    border: none;
+}
+
 .join-form .join-button {
+    display: block;
     background-color: var(--accent1-color);
     width: 50%;
     border: none;
@@ -323,7 +352,13 @@ main section ul {
     margin-bottom: 0;
 }
 
-/* Houses Csrds */
+/* House Filter */
+
+/* .houses-filter {
+    display: flex;
+} */
+
+/* Houses Cards */
 
 .hover:hover {
     box-shadow: 0 0 50px #333;
@@ -331,6 +366,7 @@ main section ul {
 
 #cards {
     grid-template-columns: 1fr;
+    min-height: 80vh;
 }
 
 #cards section {
@@ -397,20 +433,27 @@ main section ul {
 .architect-cards {
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 .architect-cards section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 15px;
     margin-top: 10px;
     margin-bottom: 0;
     padding-bottom: 20px;
-    background-color: var(--secondary-color);
+    background-color: var(--accent4-color);
     text-align: center;
-    border-radius: 30px 0 30px 0;
     border: 1px solid black;
     width: 100%;
+}
+
+.architect-cards h3 {
+    padding: 10px;
+    font-size: 2rem;
+    color: var(--accent2-color);
 }
 
 .slide-left {

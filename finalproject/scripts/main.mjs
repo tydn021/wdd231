@@ -20,7 +20,7 @@ cseLink.addEventListener("click", (event)=> {
     document.querySelector(".res-grid").innerHTML = "";
 
     const oldHouses = houses.filter(house => {
-        return house.yeardone < 1980;
+        return house.yeardone < 1970;
     })
 
     displayHouses(oldHouses);
@@ -34,10 +34,11 @@ wddLink.addEventListener("click", (event)=> {
     document.querySelector(".res-grid").innerHTML = "";
 
     const newHouses = houses.filter(house => {
-        return house.yeardone >= 1980;
+        return house.yeardone >= 1970;
     })
 
     displayHouses(newHouses);
 })
 
 displayHouses(houses);
+

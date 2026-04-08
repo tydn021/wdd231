@@ -35,66 +35,66 @@
             "description": "This was a knickknacks and furniture shop owned by Bonnie Lee, and is probably Carmel's most iconic building",
             "img": "images/hobby-house.webp"
         },{
-            "name": "",
-            "yeardone": 0,
-            "architect": "",
-            "description": "",
-            "img": "images/"
+            "name": "Mushroom Houses of Michigan",
+            "yeardone": 2000,
+            "architect": "Earl Young",
+            "description": "Probably in a gray area, as these houses were started in the 1940's by Earl Young, but he would continue his work until his death in 1975. From there people took over and these houses were completed in the 2000's.",
+            "img": "images/mushroom.webp"
         },
         {
-            "name": "",
-            "yeardone": 0,
-            "architect": "",
-            "description": "",
-            "img": "images/"
+            "name": "Tam O'Shanter Inn",
+            "yeardone": 1922,
+            "architect": "Harry Oliver",
+            "description": "Yet another masterpiece contributed by Harry Oliver, this restaurant in Los Angeles is an example of crooked styling achieved by movie set building techniques. This was also the favored hang out spot for Walt Disney and his Animators.",
+            "img": "images/tom.webp"
         },
         {
-            "name": "",
-            "yeardone": 0,
-            "architect": "",
-            "description": "",
-            "img": "images/"
+            "name": "The Muscatine Avenue Moffitt Cottage",
+            "yeardone": 1935,
+            "architect": "Howard Moffitt",
+            "description": "This is just one of many cottages built by self taught architect Howard Moffitt, this being a rare example of Storybook Style thriving in the midwest.",
+            "img": "images/moffitt.webp"
         },
         {
-            "name": "",
-            "yeardone": 0,
-            "architect": "",
-            "description": "",
-            "img": "images/"
+            "name": "The Santarella Gingerbread House",
+            "yeardone": 2004,
+            "architect": "Sir Henry Hudson Kitson",
+            "description": "While technically finished in 1932 during the golden age of Storybook Style, like the Mushroom Houses in Michigan, it too underwent a massive restoration effort and is recognized as a contemporary piece",
+            "img": "images/santarella.webp"
         },
         {
-            "name": "",
-            "yeardone": 0,
-            "architect": "",
-            "description": "",
-            "img": "images/"
+            "name": "The Gingerbread House of Bay Ridge",
+            "yeardone": 1917,
+            "architect": "James Sarsfield Kennedy",
+            "description": "Built during the Arts and Crafts era for shipping mogul Howard Jones, it nonetheless has the air of fairy-tale whimsy that would characterize the Storybook movement in the coming decades.",
+            "img": "images/bay-ridge.webp"
         },{
-            "name": "",
-            "yeardone": 0,
-            "architect": "",
-            "description": "",
-            "img": "images/"
+            "name": "The Hansel and Gretel House",
+            "yeardone": 1924,
+            "architect": "Hugh Comstock",
+            "description": "The house that kicked off the trend of Storybook houses in Carmel By The Sea, this house was built by Comstock for his wife based on the dollhouses that she made for her business.",
+            "img": "images/gretel.webp"
         },
         {
-            "name": "",
-            "yeardone": 0,
-            "architect": "",
-            "description": "",
-            "img": "images/"
+            "name": "The Whimsy House of Orcas Island",
+            "yeardone": 2004,
+            "architect": "SunRay Kelley",
+            "description": "Built by SunRay Kelley who had an evolutionary and organic outlook on architecture, this is just one of many of his Storybook architectural wonders.",
+            "img": "images/whimsy.webp"
         },
         {
-            "name": "",
-            "yeardone": 0,
-            "architect": "",
-            "description": "",
-            "img": "images/"
+            "name": "Waldo Rosebush House",
+            "yeardone": 1923,
+            "architect": "Harold Whitehouse",
+            "description": "After obtaining great success with his Paper Mill",
+            "img": "images/rosebush-house.webp"
         },
         {
-            "name": "",
-            "yeardone": 0,
-            "architect": "",
-            "description": "",
-            "img": "images/"
+            "name": "Pod House of Perinton, New York",
+            "yeardone": 1972,
+            "architect": "James H. Johnson",
+            "description": "You could mistake this house for a cluster of UFO's, this house completed in 1972 for an Attorney-Artist couple. They tried to sell the house for $1,100,000, but settled for $712,000",
+            "img": "images/pod.webp"
         },{
             "name": "Storybook House by the Sea",
             "yeardone": 2017,
