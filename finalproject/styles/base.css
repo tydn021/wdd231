@@ -7,7 +7,6 @@
     --accent4-color: #58315F;
     --bkcolor: #AC7D88;
     --bkcolor2: #FAF3E0;
-    --bkcolor-transparent: rgba(111, 178, 210, .7);
     --heading-font: "Calistoga";
     --body-font: "Work Sans", sans-serif;
 }
@@ -225,6 +224,8 @@ footer address {
     border-radius: 20px;
 
 }
+
+.siteplan-main section
 
 .right {
     order: 2;
@@ -595,4 +596,5 @@ dialog button {
 
 .smallframe {
     max-height: 600px;
+    width: auto;
 }
