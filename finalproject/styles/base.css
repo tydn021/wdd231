@@ -571,7 +571,8 @@ dialog::backdrop {
 }
 
 dialog button {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--accent3-color);
     position: absolute;
     top: .2rem;
     right: .7rem;
@@ -579,6 +580,7 @@ dialog button {
     border: none;
     margin: 0;
     padding-right: 10px;
+    font-size: 1.75rem;
 }
 
 .wireframes {
