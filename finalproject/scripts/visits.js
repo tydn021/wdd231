@@ -20,11 +20,11 @@ else {
             let day = Math.floor(currentVisits / msInDay);
 
             if(day === 1){
-                visits.textContent = `It's been one day since you've last visited! Are you interested i our tour`;
+                visits.textContent = `It's been one day since you've last visited! Are you interested in our tour?`;
             }
 
             if(day > 1) {
-                visits.textContent = `It's been ${day} days since you've last visited! Ify ou're this interested you should take our tour!`;
+                visits.textContent = `It's been ${day} days since you've last visited! If you're this interested you should take our tour!`;
             }
 
             
