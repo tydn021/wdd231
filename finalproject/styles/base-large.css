@@ -44,7 +44,7 @@
         content: "꒱";
     }
 
-      /* Footer */
+    /* Footer */
 
     footer {
         display: grid;
@@ -107,7 +107,12 @@
         padding-bottom: 20px;
     }
 
-    
+    /* Houses Main */
+
+    .houses-main {
+        width: 100%;
+    }
+
 
     /* House Cards */
 
@@ -117,7 +122,7 @@
     }
 
     /* Architect Cards */
-    
+
     .architect-cards section {
         width: 60%;
     }
