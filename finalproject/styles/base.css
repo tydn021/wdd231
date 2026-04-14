@@ -359,6 +359,7 @@ main section ul {
 
 .houses-filter nav{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
 }
